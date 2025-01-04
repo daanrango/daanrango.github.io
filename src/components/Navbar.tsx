@@ -23,7 +23,7 @@ function Navbar() {
     >
       <img src={logo} alt="logo-nav" className="w-14 invert" />
       <ul
-        className={`flex flex-col flex-1 ml-4 w-2/5 justify-end items-center absolute bg-slate-800 opacity-80 h-screen lg:h-auto top-0 left-0 transform transition-transform duration-500 ease-in-out
+        className={`flex flex-col flex-1 ml-4 w-2/5 justify-center lg:justify-end items-center absolute bg-slate-800 opacity-80 h-screen lg:h-auto top-0 left-0 transform transition-transform duration-500 ease-in-out
         lg:flex-row lg:static lg:bg-transparent lg:opacity-100 lg:translate-x-0 lg:items-start
         ${menuvisble ? "translate-x-[-20px]" : "translate-x-[-500px]"} `}
       >
