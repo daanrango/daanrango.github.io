@@ -5,7 +5,6 @@ function App() {
   return (
     <div className="w-11/12 m-auto">
       <Navbar />
-      <hr />
       <Showcase id="welcome" image="showcase-develop.jpeg" />
     </div>
   );

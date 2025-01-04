@@ -4,7 +4,7 @@ function Showcase({ image, id }: { image: string; id: string }) {
   return (
     <section
       id={"" + id}
-      className="w-full h-max md:h-80 bg-blue-dark bg-no-repeat	bg-center bg-cover mt-4 items-center block md:flex justify-center pt-10 md:py-64"
+      className="w-full h-max md:h-80 bg-blue-dark bg-no-repeat	bg-center bg-cover items-center block md:flex justify-center pt-10 md:py-64"
     >
       <div>
         <img
