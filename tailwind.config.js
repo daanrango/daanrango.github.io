@@ -6,6 +6,7 @@ export default {
       colors: {
         "blue-dark": "#0B1C2C",
         "blue-light": "#153B50",
+        "blue-neon": "#0ff",
       },
       boxShadow: {
         "circula-showcase": "0 0 10px rgba(0, 255, 255, 0.8)",
