@@ -19,7 +19,7 @@ function Navbar() {
   return (
     <div
       id="navbar"
-      className="flex flex-row justify-between h-16 my-2 lg:my-5"
+      className="w-11/12 mx-auto flex flex-row justify-between h-16 my-2 lg:my-5"
     >
       <img src={logo} alt="logo-nav" className="w-14 invert" />
       <ul

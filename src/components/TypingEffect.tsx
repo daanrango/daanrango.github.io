@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import loadData from "../utils/LoadData";
 const TypingEffect = () => {
   const [texts, setTexts] = useState<string[]>([]);
   const [index, setIndex] = useState(0);
@@ -6,18 +7,12 @@ const TypingEffect = () => {
   const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
-    const fetchTexts = async () => {
-      try {
-        const response = await fetch("/data/whoiam.txt");
-        const data = await response.text();
-        const textArray = data.split("\n").filter(Boolean);
-        setTexts(textArray);
-      } catch (error) {
-        console.error("Error fetching texts:", error);
-      }
+    const fetchWhoAIam = async () => {
+      const data = await loadData("whoiam");
+      setTexts(data);
     };
 
-    fetchTexts();
+    fetchWhoAIam();
   }, []);
 
   useEffect(() => {
