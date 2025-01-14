@@ -5,14 +5,27 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  scroll-behavior: smooth;
+}
+
 html {
   font-family: "Red Hat Display", sans-serif;
+}
+
+section {
+  padding: 10rem 12% 10rem;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 6rem 5%;
+  }
 }
 
 body {
   background-color: #0b1c2c;
   color: white;
-  scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
